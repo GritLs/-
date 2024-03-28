@@ -1,4 +1,3 @@
-[参考](https://datawhalechina.github.io/statistical-learning-method-solutions-manual/#/)
 # 统计学习的分类
 ## 基本分类  
 ### 监督学习  
@@ -134,9 +133,14 @@ $$R_{exp}(\hat f)=E_P[L(Y,\hat f( X))]=\int_{\mathcal{X}\times\mathcal{Y}}L(y,\h
 对于二类分类问题，当假设空间是有限个函数的集合$\mathcal{F}=\{f_1,f_2,\dots,f_d\}$时，对任意一个函数$f\in\mathcal{F}$，至少以概率$1-\delta$，$0<\delta<1$，以下不等式成立：
 $$R(f)\le \hat R(f)+\epsilon(d,N,\delta)$$
 其中，
-$$\epsilon(d,N,\delta)=\sqrt{\frac{1}{2N}(\log d+\log \frac{1}{\delta})} $$
+$$
+期望风险：R(f)=E[L(Y,f(X))]\\
+经验风险：\hat R(f)=\frac{1}{N}\sum_{i=1}^{N}L(y_i,f(x_i))\\
+\epsilon(d,N,\delta)=\sqrt{\frac{1}{2N}(\log d+\log \frac{1}{\delta})} 
+$$
 
 # 生成模型和判别模型 
 - 生成模型：学习联合概率分布$P(X,Y)$,典型的有朴素贝叶斯法和隐马尔可夫模型。
-- 判别模型：直接学习决策函数$f(X)$或者条件概率分布$P(Y|X)$作为预测的模型，即判别模型。
+- 判别模型：直接学习决策函数$f(X)$或者条件概率分布$P(Y|X)$作为预测的模型，即判别模型，典型的有。
 
+[参考](https://datawhalechina.github.io/statistical-learning-method-solutions-manual/#/)
