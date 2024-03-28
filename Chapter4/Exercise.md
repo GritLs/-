@@ -36,7 +36,7 @@ $$
 3. 利用贝叶斯公式，求$\theta$的后验概率$P(\theta|D)=\frac{P(D|\theta)P(\theta)}{\int P(D|\theta)P(\theta)d\theta}$
 4. 计算后验概率分布参数$\theta$的期望$\hat \theta = \int \theta P(\theta|D)d\theta$
 
-证明（4.11）：
+**证明（4.11）**：
 $$
 P_\lambda(Y=c_k)=\frac{\sum_{i=1}^{N}I(y_i=c_k)  \lambda}{N+K\lambda},\ \ k=1,2,\cdots,K
 $$
@@ -47,8 +47,9 @@ $$
 f(x_1,\cdots,x_K;\alpha_1,\cdots,\alpha_K)=\frac{\Gamma(\alpha_0)}{\Gamma(\alpha_1)\cdots\Gamma(\alpha_K)}\prod_{k=1}^{K}x_k^{\alpha_k-1}\\
 s.t. \sum_{k=1}^{K}x_k=1,\ x_k\ge0,\ \alpha_j>0,\ \alpha_0=\sum_{k=1}^{K}\alpha_k
 $$
+似然：
 $$
-似然：p(D|u)=p(x_1,\cdots,x_n|u)=\prod_{k=1}^{K}u_k^{m_k}
+p(D|u)=p(x_1,\cdots,x_n|u)=\prod_{k=1}^{K}u_k^{m_k}
 $$
 <!-- 关于$\{m_i\}$的联合概率分布 (多项概率分布)：
 $$
@@ -73,7 +74,7 @@ E(u_k)=\frac{\lambda+m_k}{\sum_{k=1}^{K}\lambda+m_k}=\frac{\lambda+m_k}{K\lambda
 $$
 得证。  
 
-证明公式4.10：
+**证明公式4.10**：  
 条件假设$P_\lambda(X^{j}=a_{jl}|Y=c_k)=u_l$，其中$l=1,2,\cdots,S_j$；出现$x^{(j)}=a_{jl},y=c_k$的次数为$m_l$。   
   
 先验概率: 
